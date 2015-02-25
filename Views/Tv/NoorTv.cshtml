@@ -1,0 +1,230 @@
+﻿
+@{
+    ViewBag.Title = "Noor Tv Online";
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--theme-style-->
+<link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<script src="~/js/jquery.min.js"></script>
+</head>
+<body> 
+	<!--header-->
+	<div class="header">
+		<div class="top-header">
+			<div class="container">
+				<div class="top-header-left">
+					<div class="clearfix"> </div>
+				</div>
+				<div class="top-header-right">
+					<div class="down-top">		
+						  <p style="color:White">Quran-o-Hadith | A reforming Project</p>
+					 </div>
+					<div class="clearfix"> </div>	
+				</div>
+				<div class="clearfix"> </div>		
+			</div>
+		</div>
+		<div class="bottom-header">
+			<div class="container">
+				<div class="header-bottom-left">
+					<div class="logo">
+						<a href="~/Home/Index"><img src="~/images/logo.png" alt=" " /></a>
+					</div>
+					<div class="search">
+						<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
+						<input type="submit"  value="SEARCH">
+
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="header-bottom-right">					
+						<div class="account"><a href="~/SignIn/SignIn"><span> </span>YOUR ACCOUNT</a></div>
+							<ul class="login">
+								<li><a href="~/SignIn/SignIn"><span> </span>LOGIN</a></li> |
+								<li ><a href="~/SignUp/Signup">SIGNUP</a></li>
+							</ul>
+				</div>
+				<div class="clearfix"> </div>	
+			</div>
+		</div>
+	</div>
+	
+	
+<div class="container">
+	 <div class="sub-cate">
+				<div class=" top-nav rsidebar span_1_of_left">
+					<h3 class="cate">CATEGORIES</h3>
+		 <ul class="menu">
+		<li class="item1"><a href="#">Quran <img class="arrow-img" src="images/arrow1.png" alt=""/> </a>
+			<ul class="cute">
+				<li class="subitem1"><a href="~/QuranChapter/Product">Read Quran</a></li>
+				<li class="subitem2"><a href="~/QuranChapter/Product">Audio Quran </a></li>
+			</ul>
+		</li>
+		<li class="item2"><a href="#">Hadith <img class="arrow-img " src="images/arrow1.png" alt=""/></a>
+			<ul class="cute">
+				<li class="subitem1"><a href="~/Hadith/Product">Sahih Hadith</a></li>
+			</ul>
+		</li>
+		<li class="item3"><a href="#">Books <img class="arrow-img img-arrow" src="images/arrow1.png" alt=""/> </a>
+			<ul class="cute">
+				<li class="subitem1"><a href="~/Book/BookList">Islamic Books</a></li>
+			</ul>
+		</li>
+		<li class="item4"><a href="#">Videos<img class="arrow-img img-left-arrow" src="images/arrow1.png" alt=""/></a>
+			<ul class="cute">
+				<li class="subitem1"><a href="~/Video/Product">Urdu Bayan</a></li>
+			</ul>
+		</li>
+				<li>
+			<ul class="kid-menu">
+				<li><a href="~/Tv/PeaceTv">Peace TV Online</a></li>
+				<li ><a href="~/Tv/NoorTv">Noor TV Online</a></li>
+				<li ><a href="http://www.darsequran.com/">Dars-e-Quran</a></li>
+			</ul>
+		</li>
+		<ul class="kid-menu ">
+				<li class="menu-kid-left"><a href="~/ContactUs/ContactUs">Contact us</a></li>
+			</ul>
+	</ul>
+					</div>
+				<!--initiate accordion-->
+		<script type="text/javascript">
+		    $(function () {
+		        var menu_ul = $('.menu > li > ul'),
+			           menu_a = $('.menu > li > a');
+		        menu_ul.hide();
+		        menu_a.click(function (e) {
+		            e.preventDefault();
+		            if (!$(this).hasClass('active')) {
+		                menu_a.removeClass('active');
+		                menu_ul.filter(':visible').slideUp('normal');
+		                $(this).addClass('active').next().stop(true, true).slideDown('normal');
+		            } else {
+		                $(this).removeClass('active');
+		                $(this).next().stop(true, true).slideUp('normal');
+		            }
+		        });
+
+		    });
+		</script>
+					</div>
+        <div style="align-content:center">
+            <br/><br/><br/>
+            <style>
+                .framing{
+                         
+                        
+                             text-align: center;
+                             display:inline;
+                        
+                        
+                      }
+            </style>
+            <h3 style="text-align:center">Noor TV Online</h3>
+            <table class="framing">
+                <td>
+                    <tr><p></p></tr>
+                    <tr>
+	   	           <iframe style="align-items:center" SRC="http://a2zstream.com/noor.php" width='800' height='600' marginwidth=10 marginheight=10 hspace=10 vspace=10 frameborder=0 scrolling='no'></iframe>
+             </tr></td>
+                    </table>              
+        </div>
+			  <div class="clearfix"> </div>
+      	 </div>
+    <div class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="latter">
+					<h6>NEWS-LETTER</h6>
+					<div class="sub-left-right">
+						<form>
+							<input type="text" value="Enter email here"onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter email here';}" />
+							<input type="submit" value="SUBSCRIBE" />
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="latter-right">
+					<p>FOLLOW US</p>
+					<ul class="face-in-to">
+						<li><a href="https://twitter.com/SardarAliOwais"><span> </span></a></li>
+						<li><a href="https://www.facebook.com/nasirmalik209"><span class="facebook-in"> </span></a></li>
+						<div class="clearfix"> </div>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+    <div class="footer-bottom">
+			<div class="container">
+				<div class="footer-bottom-cate">
+					<h6>CATEGORIES</h6>
+					<ul>
+						<li><a href="~/QuranChapter/Product">Read Quran</a></li>
+						<li><a href="~/QuranChapter/Product">Audio Quran</a></li>
+						<li><a href="~/Video/Product">Urdu Byan</a></li>
+						<li ><a href="~/Hadith/Product">Sahih Hadith</a></li>
+						<li><a href="~/Book/BookList">Books</a></li>
+						<li ><a href="~/Tv/PeaceTv">Peace TV Online</a></li>
+						<li><a href="~/Tv/NoorTv">Noor TV Online</a></li>
+						<li><a href="www.darsequran.com">Dars e Quran</a></li>
+						<li ><a href="~/ContactUs/ContactUs">Contact Us</a></li>				</ul>
+				</div>
+				<div class="footer-bottom-cate bottom-grid-cat">
+					<h6>Featured Posts</h6>
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li ><a href="#"></a></li>
+						<li ><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom-cate">
+					<h6>Related Websites</h6>
+					<ul>
+						<li><a href="www.quran.com">Quran.com</a></li>
+						<li><a href="www.peace.tv">Peace Tv</a></li>
+						<li><a href="www.tanzeem.org">Tanzeem e Islami</a></li>
+						<li ><a href="www.darsequran.com">Dars e Quran</a></li>
+						<li ><a href="www.sirat-e-mustaqeem.com">Sirat e Mustaqeem</a></li>
+						<li><a href="www.iqratv.com">Iqra TV</a></li>
+						<li><a href="#">Huda TV</a></li>
+						<li ><a href="#">Islam TV</a></li>
+						<li><a href="#">Taraweeh Makkah</a></li>
+						<li><a href="#">Noor e Hidayat</a></li>
+						<li ><a href="#">Noor TV</a></li>
+						<li ><a href="#">Alpha Quran</a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom-cate cate-bottom">
+					<h6>OUR ADDERSS</h6>
+					<ul>
+						<li>Room Number 38</li>
+						<li>HKBW Hall</li>
+						<li>Punjab University Old Campus</li>
+						<li>Anarkali Lahore</li>
+						<li class="phone">PH : 92 333 684 0800 <br/> PH : 92 321 695 3209</li>
+						<li class="temp"> <p class="footer-class">Design by: Awais | Touqeer </p></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
